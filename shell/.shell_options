@@ -1,0 +1,32 @@
+#!/bin/env zsh
+
+# general options
+setopt AUTO_CD
+setopt NO_CASE_GLOB
+setopt CORRECT
+setopt NO_LIST_BEEP
+setopt histignorespace
+
+# use vim keybindings
+bindkey -v
+bindkey jk vi-cmd-mode
+bindkey '^R' history-incremental-search-backward
+bindkey -v '^?' backward-delete-char
+
+# powerful zsh completion configuration
+autoload -Uz compinit && compinit
+
+# case insensitive path-completion
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
+
+# partial completion suggestions
+zstyle ':completion:*' list-suffixes
+zstyle ':completion:*' expand prefix suffix
+
+# run-help makes accessing zsh man pages easier
+unalias run-help 2> /dev/null
+autoload run-help
+
+# see https://unix.stackexchange.com/questions/72086/ctrl-s-hangs-the-terminal-emulator
+# without this ctrl-s wasn't working in vim
+stty -ixon
