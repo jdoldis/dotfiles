@@ -45,3 +45,12 @@ cnoreabbrev h vert h
 
 " close netrw buffer when file is opened
 let g:netrw_fastbrowse = 0
+
+" automatically close parenthesis/brackets
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap <C-e> <C-o>A

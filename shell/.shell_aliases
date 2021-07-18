@@ -42,7 +42,16 @@ fi
 alias history="history 1"
 
 # git aliases
+alias gst='git status'
+alias gl='git pull'
+alias gp='git push'
+alias ga='git add'
+alias gc='git commit -v'
+alias glog='git log'
 alias gitamend="git add -A && git commit --amend --no-edit && git push -f"
+alias ggraph="git log --all --decorate --oneline --graph"
+alias gd="git diff"
+alias gds="git diff --staged"
 
 # docker aliases
 alias rmstopped="docker rm \$(docker ps -a -q)"
