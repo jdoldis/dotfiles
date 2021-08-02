@@ -55,3 +55,8 @@ alias gds="git diff --staged"
 
 # docker aliases
 alias rmstopped="docker rm \$(docker ps -a -q)"
+
+# easily switch java versions
+# the environment variables are defined in .shell_exports
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
+alias java11='export JAVA_HOME=$JAVA_11_HOME'
