@@ -48,7 +48,6 @@ let g:netrw_fastbrowse = 0
 
 " automatically close parenthesis/brackets
 inoremap " ""<left>
-inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
