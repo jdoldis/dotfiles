@@ -18,6 +18,7 @@ set ruler
 set showmatch
 set cursorline
 set incsearch
+set ignorecase
 set backspace=indent,eol,start
 inoremap jk <esc>
 nnoremap j gj
