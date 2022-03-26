@@ -20,6 +20,14 @@ else # OS X `ls`
 fi
 alias ls="ls ${colorflag}"
 
+# Uncomment if using lsd
+# Install nerdfont before using with
+#   brew tap homebrew/cask-fonts
+#   brew install --cask font-hack-nerd-font
+# Set as default font in profile too.
+
+# alias ls="lsd --group-dirs first --extensionsort""
+
 # copy public key to clipboard
 alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy"
 
