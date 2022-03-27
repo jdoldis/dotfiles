@@ -15,3 +15,6 @@ man() {
 
 # list on cd
 chpwd() ls
+
+# comment if not using gruvbox
+sh ~/.vim/pack/default/start/gruvbox/gruvbox_256palette.sh
