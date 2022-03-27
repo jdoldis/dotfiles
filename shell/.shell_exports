@@ -5,7 +5,7 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 # Customise the prompt
-export PS1=$'%B%F{yellow}%n@%m%f%b:%B%F{blue}%~%f%b$ '
+export PS1=$'%B%F{green}%n@%m%f%b:%B%F{magenta}%~%f%b$ '
 
 # History configuration
 export HISTSIZE=1000

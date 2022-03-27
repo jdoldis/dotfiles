@@ -26,7 +26,8 @@ alias ls="ls ${colorflag}"
 #   brew install --cask font-hack-nerd-font
 # Set as default font in profile too.
 
-# alias ls="lsd --group-dirs first --extensionsort"
+#alias ls="lsd --group-dirs first --extensionsort"
+#alias tree="ls --tree"
 
 # copy public key to clipboard
 alias pubkey="cat ~/.ssh/id_rsa.pub | pbcopy"

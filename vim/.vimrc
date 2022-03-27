@@ -3,7 +3,7 @@ filetype plugin indent on
 
 " syntax highlighting
 syntax enable
-colorscheme desert
+colorscheme gruvbox
 
 " tab & indentation
 set tabstop=4
