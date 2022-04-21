@@ -54,3 +54,6 @@ inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap <C-e> <C-o>A
+
+" avoid syntax highlight timeouts on typescript files
+set re=0
