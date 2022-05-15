@@ -8,3 +8,11 @@ dotfiles:
 		f=$$(basename $$file); \
 		ln -sfn $$file $(HOME)/$$f; \
 	done
+
+# Symlink the bin files to the /usr/local/bin directory
+.PHONY: bin
+bin:
+	for file in $(shell find $(CURDIR)/bin -type f -not -name ".*.swp" -not -name "setup-linux-machine"); do \
+		f=$$(basename $$file); \
+		sudo ln -sf $$file /usr/local/bin/$$f; \
+	done

@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+mkdir -p src/{main,test}/{java,resources,scala}
+mkdir lib project target
+echo 'name := "MyProject"
+version := "1.0"
+scalaVersion := "2.12.8"' > build.sbt
